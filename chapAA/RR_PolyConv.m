@@ -1,4 +1,4 @@
-function p=RR_PolyConv(a,b,c,d,e,f,g,h,i,j)
+function p=RR_PolyConv(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p)
 % function p=RR_PolyConv(a,b,c,d,e,f,g,h,i,j)
 % Recursively compute the convolution of the two to ten polynomials, given as arguments.  
 % INPUT:  a,b,c,d,e,f,g,h,i,j = vectors of polynimal coefficients
@@ -7,6 +7,9 @@ function p=RR_PolyConv(a,b,c,d,e,f,g,h,i,j)
 % Renaissance Robotics codebase, Appendix A, https://github.com/tbewley/RR
 % Copyright 2022 by Thomas Bewley, distributed under BSD 3-Clause License. 
 
+if nargin>15, a=RR_PolyConv(a,p); end, if nargin>14, a=RR_PolyConv(a,o); end
+if nargin>13, a=RR_PolyConv(a,n); end, if nargin>12, a=RR_PolyConv(a,m); end
+if nargin>11, a=RR_PolyConv(a,l); end, if nargin>10, a=RR_PolyConv(a,k); end
 if nargin>9, a=RR_PolyConv(a,j); end, if nargin>8, a=RR_PolyConv(a,i); end
 if nargin>7, a=RR_PolyConv(a,h); end, if nargin>6, a=RR_PolyConv(a,g); end
 if nargin>5, a=RR_PolyConv(a,f); end, if nargin>4, a=RR_PolyConv(a,e); end

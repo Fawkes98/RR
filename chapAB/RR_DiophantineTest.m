@@ -25,4 +25,4 @@ b4=[1 -1 -2], a4=[1 2 -13 -14 24], f4=[1 8 22 24 9]
 test4=RR_PolyAdd(RR_PolyConv(a4,x4),RR_PolyConv(b4,y4)); residual=norm(RR_PolyAdd(f4,-test4))
 fprintf('Note that this solution {x,y} is improper, and solves a4*x4+b4*y4=f4\n\n')
 
-% end scritp RR_DiophantineTest
+% end script RR_DiophantineTest
